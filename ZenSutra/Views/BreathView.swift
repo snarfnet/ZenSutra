@@ -13,7 +13,7 @@ struct BreathView: View {
         case inhale = "Inhale"
         case hold = "Hold"
         case exhale = "Exhale"
-        case holdOut = "Hold"
+        case holdOut = "Hold Out"
     }
 
     var circleScale: Double {
