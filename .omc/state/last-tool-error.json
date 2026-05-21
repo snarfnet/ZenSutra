@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"ssh USER@192.168.3.27 'python3 << \\\"PYEOF\\\"\\nimport jwt, time, requests\\n\\nkey_id = \\\"JYA5G4738Z\\\"\\nissuer_id = \\\"2be0734f-943a-4d61-9dc9-5d9045c46fec\\\"\\nwith open(\\\"/Users/user/.appstorec...",
+  "error": "Exit code 1\n  File \"<stdin>\", line 24\n    (r.json().get(errors, [{}])[0].get(detail, ?)[:80])\n                                               ^\nSyntaxError: f-string: invalid syntax",
+  "timestamp": "2026-04-15T09:07:07.007Z",
+  "retry_count": 1
+}

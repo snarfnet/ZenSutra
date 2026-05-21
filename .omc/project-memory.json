@@ -1,0 +1,101 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1779326886700,
+  "projectRoot": "C:\\Users\\Windows\\ZenSutra",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "ZenSutra": {
+      "path": "ZenSutra",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1779326886659,
+      "keyFiles": [
+        "ContentView.swift",
+        "Info.plist",
+        "ZenSutraApp.swift"
+      ]
+    },
+    "ZenSutra.xcodeproj": {
+      "path": "ZenSutra.xcodeproj",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1779326886660,
+      "keyFiles": [
+        "project.pbxproj"
+      ]
+    },
+    "ZenSutra\\Data": {
+      "path": "ZenSutra\\Data",
+      "purpose": "Data files",
+      "fileCount": 1,
+      "lastAccessed": 1779326886661,
+      "keyFiles": [
+        "SutraData.swift"
+      ]
+    },
+    "ZenSutra\\Models": {
+      "path": "ZenSutra\\Models",
+      "purpose": "Data models",
+      "fileCount": 0,
+      "lastAccessed": 1779326886662,
+      "keyFiles": []
+    },
+    "ZenSutra\\Views": {
+      "path": "ZenSutra\\Views",
+      "purpose": "View templates",
+      "fileCount": 3,
+      "lastAccessed": 1779326886663,
+      "keyFiles": [
+        "BreathView.swift",
+        "SutraView.swift",
+        "TimerView.swift"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "ZenSutra.xcodeproj\\project.pbxproj",
+      "accessCount": 3,
+      "lastAccessed": 1779328555874,
+      "type": "file"
+    },
+    {
+      "path": "ZenSutra\\Views\\BreathView.swift",
+      "accessCount": 2,
+      "lastAccessed": 1779327111185,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 1,
+      "lastAccessed": 1779326897025,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}
