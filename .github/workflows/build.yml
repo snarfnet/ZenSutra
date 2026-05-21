@@ -77,7 +77,7 @@ jobs:
             <key>uploadSymbols</key>
             <true/>
             <key>destination</key>
-            <string>upload</string>
+            <string>export</string>
           </dict>
           </plist>
           EOF
@@ -89,3 +89,15 @@ jobs:
             -authenticationKeyPath ~/.appstoreconnect/private_keys/AuthKey_WDXGY9WX55.p8 \
             -authenticationKeyID WDXGY9WX55 \
             -authenticationKeyIssuerID 2be0734f-943a-4d61-9dc9-5d9045c46fec
+
+      - name: Upload IPA
+        run: |
+          xcrun altool --upload-app \
+            -f build/export/ZenSutra.ipa \
+            -t ios \
+            --apple-id 6771141622 \
+            --bundle-id com.tokyonasu.ZenSutra \
+            --bundle-version $BUILD_NUMBER \
+            --bundle-short-version-string $APP_VERSION \
+            --apiKey WDXGY9WX55 \
+            --apiIssuer 2be0734f-943a-4d61-9dc9-5d9045c46fec
