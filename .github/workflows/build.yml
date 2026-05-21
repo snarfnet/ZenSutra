@@ -77,7 +77,7 @@ jobs:
             <key>uploadSymbols</key>
             <true/>
             <key>destination</key>
-            <string>export</string>
+            <string>upload</string>
           </dict>
           </plist>
           EOF
@@ -89,15 +89,3 @@ jobs:
             -authenticationKeyPath ~/.appstoreconnect/private_keys/AuthKey_WDXGY9WX55.p8 \
             -authenticationKeyID WDXGY9WX55 \
             -authenticationKeyIssuerID 2be0734f-943a-4d61-9dc9-5d9045c46fec
-
-      - name: Upload IPA
-        run: |
-          set -o pipefail
-          xcrun altool --upload-app \
-            -f build/export/ZenSutra.ipa \
-            -t ios \
-            --apiKey WDXGY9WX55 \
-            --apiIssuer 2be0734f-943a-4d61-9dc9-5d9045c46fec 2>&1 | tee upload.log
-          if grep -q "UPLOAD FAILED\|Validation failed" upload.log; then
-            exit 1
-          fi
